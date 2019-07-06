@@ -1,0 +1,1 @@
+<?phpinclude 'sql_config.php';$con = new mysqli($server_name,$mysql_user,$mysql_pass,$db_name);$con = new PDO('mysql:dbname='.$db_name.';host='.$server_name.';charset=utf8', $mysql_user, $mysql_pass);$con->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);?>
